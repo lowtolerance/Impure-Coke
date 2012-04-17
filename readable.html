@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<head>
+	<title>Impure Coke Can | Original by Roman Cortes</title>
+	<script>
+		function violator(){
+			for(i=0;i<172;i++){
+				p=document.createElement("p"),a=document.getElementsByTagName("a");
+				pos=(Math.acos((i-85.5)/86)*86);
+				p.setAttribute("id","x"+i);
+				p.setAttribute("style","background-position:"+(Math.round(pos+i-50))+"px 30px");
+				document.getElementById("y").insertBefore(p,a[0])
+			}
+		}
+	</script>
+	<style type="text/css">
+	* { margin:0;border:0}
+	#coke {
+	width: 510px;
+	overflow: auto}
+	img{margin-left:-172px}
+	a {
+	display: block;
+	padding-top: 19px;
+	width: 30%}
+	a:hover img { background: url(3) no-repeat 15px 100px}
+	#y {
+	background: url(4) no-repeat 0 0;
+	padding-left: 300px;
+	width: 130%}
+	p {
+	width:1px;
+	float: left;
+	height: 375px;
+	background: url(2) fixed repeat-x}
+	</style>
+</head>
+<body onload="violator()">
+	<div id="coke">
+		<div id="y">
+			<a href="http://www.romancortes.com/" target="_top">
+				<img src="1" alt="Impure Coke Can | Original by Roman Cortes" />
+			</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Impure Coke Can | Original by Roman Cortes</title>
+	<script type="text/javascript">
+	function violator(){
+		var pos=5,neg=-57;
+		for(i=1;i<=55;i++){
+			var p=document.createElement("p"),a=document.getElementsByTagName("a"),img=document.getElementsByTagName("img");
+			precalc=[2,2,2,2,3,3,5];
+			if(i>7&&i<49)
+				x=i*-1-6;
+			else if(i<8){
+				x=pos;
+				pos-=precalc[7-i]}
+			else{
+				x=neg;
+				neg-=precalc[i-49]}
+			var d=1;
+			if(i>15&&i<40){
+				precalc=[2,1,2,2,2,2,3,3,4,5,7,12,55,11,6,5,4,3,3,2,2,2,1,2];
+				d=precalc[i-16]}
+			p.setAttribute("id","x"+i);
+			p.setAttribute("style","background-position:"+x+"px 30px; width:"+d+"px");
+			document.getElementById("y").insertBefore(p,a[0])} 
+		img[0].setAttribute("style","margin-left:-172px")};
+	</script>
+	<style type="text/css">
+	* { margin:0;border:0}
+	#coke {
+	width: 510px;
+	overflow: auto}
+	a {
+	display: block;
+	padding-top: 19px;
+	width: 30%}
+	a:hover img { background: url(coke-title.png) no-repeat 15px 100px}
+	#y {
+	background: url(coke-scroll.png) no-repeat 0 0;
+	padding-left: 300px;
+	width: 130%}
+	p {
+	float: left;
+	height: 375px;
+	background: url(coke-label.jpg) fixed repeat-x}
+	</style>
+</head>
+<body onload="violator();">
+	<div id="coke">
+		<div id="y">
+			<a href="http://www.romancortes.com/" target="_top">
+				<img src="coke-can.png" alt="Impure Coke Can | Original by Roman Cortes" />
+			</a>
+		</div>
+	</div>
+</body>
+</html>
